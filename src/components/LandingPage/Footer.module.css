@@ -19,3 +19,12 @@ footer {
   padding: 20px;
   width: 100%;
 }
+
+@media screen and (max-width: 1200px) {
+  .footerRow {
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+    height: auto;
+  }
+}

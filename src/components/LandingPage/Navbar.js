@@ -13,13 +13,13 @@ const Navbar = () => {
           <img src={logo} alt="" />
           <span>Stay Healthy</span>
         </a>
-        <div className={`${styles.menuBTN} ${menuOpen && styles.open}`}>
-          <div
-            className={styles.burgerMenu}
-            onClick={() => {
-              setMenuOpen(!menuOpen);
-            }}
-          ></div>
+        <div
+          className={`${styles.menuBTN} ${menuOpen && styles.open}`}
+          onClick={() => {
+            setMenuOpen(!menuOpen);
+          }}
+        >
+          <div className={styles.burgerMenu}></div>
         </div>
         <ul id={styles.navUL} className={`${menuOpen && styles.show}`}>
           <li>
@@ -42,8 +42,8 @@ const Navbar = () => {
             </a>
           </li>
           <li className={styles.signUP}>
-            <a href="/auth" id={styles.signUP}>
-              Sign up
+            <a href="/dashboard" id={styles.signUP}>
+              Dashboard
             </a>
           </li>
         </ul>

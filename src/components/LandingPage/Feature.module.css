@@ -38,3 +38,12 @@
 .itemBox > p {
   max-width: 70%;
 }
+
+@media screen and (max-width: 1200px) {
+  .contentRowOne {
+    height: auto;
+  }
+  .itemBox {
+    width: 100%;
+  }
+}
