@@ -1,9 +1,8 @@
-
 .button {
   border-radius: 20px;
-  border: 1px solid #ff4b2b;
+  border: 1px solid #373860;
   background-color: #fff;
-  color: #ff464d;
+  color: #733c81;
   font-size: 1rem;
   font-weight: bold;
   padding: 8px 41px;
@@ -27,5 +26,3 @@
   max-width: 100%;
   min-height: 480px;
 }
-
-

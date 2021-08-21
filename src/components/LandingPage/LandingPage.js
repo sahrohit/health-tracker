@@ -6,6 +6,7 @@ import Header from "./Header";
 import Feature from "./Feature";
 
 import KUTE from "kute.js";
+import Footer from "./Footer";
 
 const LandingPage = () => {
   useEffect(() => {
@@ -21,37 +22,10 @@ const LandingPage = () => {
     <main>
       <Navbar />
       <Header />
+      <div className={`${styles.spacer} ${styles.layer1}`}></div>
       <Feature />
-      <footer>
-        <div class={styles.footerRow}>
-          <div className={styles.footerDiv}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              earum dolorem, sint ipsa hic id cumque dolores neque itaque
-              aspernatur!
-            </p>
-          </div>
-          <div className={styles.footerDiv}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              earum dolorem, sint ipsa hic id cumque dolores neque itaque
-              aspernatur!
-            </p>
-          </div>
-          <div className={styles.footerDiv}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              earum dolorem, sint ipsa hic id cumque dolores neque itaque
-              aspernatur!
-            </p>
-          </div>
-        </div>
-        <div>
-          <p style={{ padding: "20px", textAlign: "center" }}>
-            give copyright text here or whatever
-          </p>
-        </div>
-      </footer>
+      <div className={`${styles.spacer} ${styles.layer2} ${styles.flip}`}></div>
+      <Footer />
     </main>
   );
 };

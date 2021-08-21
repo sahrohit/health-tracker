@@ -3,6 +3,7 @@
   width: 100%;
   height: 80vh;
   color: var(--fg);
+  background-color: #202731;
 }
 .contentRowOne {
   display: flex;

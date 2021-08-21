@@ -1,0 +1,21 @@
+footer {
+  background-color: #bd2b84;
+  color: #dddddd;
+  width: 100%;
+}
+
+.footerRow {
+  display: flex;
+  flex-flow: row;
+  margin: auto;
+  width: 80%;
+  height: 40vh;
+}
+
+.footerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}

@@ -43,12 +43,15 @@ nav {
   font-family: var(--font_Montserrat);
   font-size: 1rem;
   padding: 15px 30px;
+  border-radius: 30px;
+
   transition: all 0.5s ease-in-out;
 }
 
 .navContainer ul li a:hover {
   color: var(--ng);
   background-color: var(--fg);
+  border-radius: 30px;
 }
 
 #logo img {

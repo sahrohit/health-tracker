@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -10,18 +9,8 @@ import UpdateProfile from "./Dashboard/UpdateProfile";
 import Auth from "./Auth/Auth";
 import LandingPage from "./LandingPage/LandingPage";
 import Exercise from "./Exercise/Exercise";
-import wallpaper from "../assets/wallpapers.json";
 
 function App() {
-  // useEffect(() => {
-  //   document.body.style.backgroundImage =
-  //     "url(" +
-  //     wallpaper.wallpaper[
-  //       Math.floor(Math.random() * wallpaper.wallpaper.length)
-  //     ] +
-  //     ")";
-  // });
-
   return (
     <Router>
       <AuthProvider>
@@ -35,13 +24,12 @@ function App() {
             path="/update-profile"
             component={UpdateProfile}
           ></PrivateRoute>
+          <Route path="/auth" component={Auth}></Route>
           <Container
             id="background"
             className={`d-flex align-items-center justify-content-center`}
             style={{ minHeight: "100vh" }}
           >
-            <Route path="/auth" component={Auth}></Route>
-
             <Route path="/forgot-password" component={ForgotPassword}></Route>
           </Container>
         </Switch>
