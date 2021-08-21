@@ -4,11 +4,23 @@
   align-items: center;
   width: 100%;
   height: 100vh;
+  z-index: 0;
 }
 
 .headingText > div {
   font-family: var(--font_Merriweather);
   text-align: center;
   width: 60%;
+  z-index: 1;
+
   color: var(--fg);
+}
+
+.blob {
+  text-align: center;
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

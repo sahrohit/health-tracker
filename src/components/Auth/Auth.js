@@ -14,7 +14,6 @@ const Auth = () => {
   if (currentUser) {
     history.push("/dashboard");
   }
-
   return (
     <div className={`w-100 ${styles.container}`} style={{ maxWidth: "800px" }}>
       <div

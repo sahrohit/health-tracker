@@ -9,7 +9,7 @@ import ForgotPassword from "./Auth/ForgotPassword";
 import UpdateProfile from "./Dashboard/UpdateProfile";
 import Auth from "./Auth/Auth";
 import LandingPage from "./LandingPage/LandingPage";
-
+import Exercise from "./Exercise/Exercise";
 import wallpaper from "../assets/wallpapers.json";
 
 function App() {
@@ -28,18 +28,17 @@ function App() {
         <Switch>
           <Route exact path="/" component={LandingPage}></Route>
 
+          <PrivateRoute path="/exercise" component={Exercise}></PrivateRoute>
+
+          <PrivateRoute path="/dashboard" component={Dashboard}></PrivateRoute>
+          <PrivateRoute
+            path="/update-profile"
+            component={UpdateProfile}
+          ></PrivateRoute>
           <Container
             className={`d-flex align-items-center justify-content-center`}
             style={{ minHeight: "100vh" }}
           >
-            <PrivateRoute
-              path="/dashboard"
-              component={Dashboard}
-            ></PrivateRoute>
-            <PrivateRoute
-              path="/update-profile"
-              component={UpdateProfile}
-            ></PrivateRoute>
             <Route path="/auth" component={Auth}></Route>
 
             <Route path="/forgot-password" component={ForgotPassword}></Route>

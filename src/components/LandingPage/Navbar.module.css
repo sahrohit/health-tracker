@@ -25,6 +25,7 @@ nav {
   align-items: center;
   background-color: var(--ng);
   padding: 0.2rem;
+  z-index: 3;
 }
 
 .navContainer > ul {
