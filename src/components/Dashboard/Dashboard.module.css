@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+  display: flex;
+  margin-top: 86.4px;
+  z-index: 5;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.profile {
+  position: fixed;
+  width: 455px;
+  height: 88vh;
+}
+
+.databox {
+  width: 70%;
+  margin-left: 30%;
+  height: 5000px;
+}

@@ -1,70 +1,28 @@
-import React, { useState } from "react";
-import { Card, Button, Alert, Container } from "react-bootstrap";
+import React, { useEffect } from "react";
 
-import { useAuth } from "../../contexts/AuthContext";
+import styles from "./Dashboard.module.css";
 
-import { Link, useHistory } from "react-router-dom";
-import DashboardData from "./DashboardData";
+import Navbar from "../LandingPage/Navbar";
+import Profile from "./Profile";
+import Databox from "../LandingPage/Databox";
 
 const Dashboard = () => {
-  const [error, setError] = useState("");
-
-  const { logOut } = useAuth();
-
-  const history = useHistory();
-
-  const handleLogout = async () => {
-    setError("");
-    try {
-      await logOut();
-      history.push("/auth");
-    } catch (error) {
-      setError("Failed to Logout");
-    }
-  };
+  useEffect(() => {
+    document.body.style.backgroundImage = "";
+  }, []);
 
   return (
     <>
-      <Card>
-        <Card.Body>
-          <h2 class="text-center mb-4s">Profile</h2>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <DashboardData />
-          <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
-            Update Profile
-          </Link>
-          <Button
-            variant="outline-danger"
-            onClick={handleLogout}
-            className="w-100 text-center"
-          >
-            Log Out
-          </Button>
-        </Card.Body>
-      </Card>
+      <Navbar />
 
-      <Container
-        className={`d-flex align-items-center justify-content-center`}
-        style={{ minHeight: "100vh", width: "150%" }}
-      >
-        <Card>
-          <Card.Body>
-            <h2 class="text-center mb-4s">Profile</h2>
-            {error && <Alert variant="danger">{error}</Alert>}
-            <DashboardData />
-            <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
-              Update Profile
-            </Link>
-            <Button
-              variant="outline-danger"
-              onClick={handleLogout}
-              className="w-100 text-center"
-            >
-              Log Out
-            </Button>
-          </Card.Body>
-        </Card>
-      </Container>
+      <div className={styles.container}>
+        <div className={styles.profile}>
+          <Profile />
+        </div>
+        <div className={styles.databox}>
+          <Databox />
+        </div>
+      </div>
     </>
   );
 };

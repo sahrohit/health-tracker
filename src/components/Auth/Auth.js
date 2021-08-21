@@ -24,7 +24,8 @@ const Auth = () => {
         Math.floor(Math.random() * wallpaper.wallpaper.length)
       ] +
       ")";
-  });
+  }, []);
+
   return (
     <Container
       id="background"

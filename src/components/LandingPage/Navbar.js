@@ -3,8 +3,12 @@ import styles from "./Navbar.module.css";
 
 import logo from "../../assets/logo.png";
 
+import { useAuth } from "../../contexts/AuthContext";
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const { currentUser } = useAuth();
 
   return (
     <nav>
@@ -38,7 +42,7 @@ const Navbar = () => {
           </li>
           <li>
             <a href="/auth" id={styles.signIN}>
-              Sign in
+              {currentUser ? `${currentUser.displayName}` : "Sign in"}
             </a>
           </li>
           <li className={styles.signUP}>

@@ -1,0 +1,53 @@
+.container {
+  background-color: #22262f;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin: 0.5rem;
+  border-radius: 20px;
+}
+
+.container > * {
+  padding: 1rem;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.picture {
+  text-align: center;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 8px 8px rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.name {
+  color: white;
+  text-align: center;
+}
+
+.name > p {
+  margin: 0;
+}
+
+.about {
+  color: white;
+}
+
+.about > p {
+  margin: 0;
+}
+
+.update {
+}
+
+.logout {
+}
