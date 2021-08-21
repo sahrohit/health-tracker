@@ -1,0 +1,160 @@
+dl,
+ol,
+ul {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#logo > img {
+  padding: 0.5rem;
+  width: 100px;
+  height: 100px;
+}
+
+nav {
+  padding-top: 1rem;
+}
+
+.navContainer {
+  position: fixed;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--ng);
+  padding: 0.2rem;
+}
+
+.navContainer > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.navContainer ul li a {
+  display: flex;
+  color: var(--fg);
+  background-color: var(--ng);
+  text-decoration: none;
+  font-family: var(--font_Montserrat);
+  font-size: 1rem;
+  padding: 15px 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.navContainer ul li a:hover {
+  color: var(--ng);
+  background-color: var(--fg);
+}
+
+#logo img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+/* burger menu  */
+
+.menuBTN {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.burgerMenu {
+  width: 50px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.burgerMenu::before,
+.burgerMenu::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.burgerMenu::before {
+  transform: translateY(-16px);
+}
+
+.burgerMenu::after {
+  transform: translateY(16px);
+}
+/* button animation */
+.menuBTN.open .burgerMenu {
+  transform: translateX(-50px);
+  background-color: transparent;
+}
+
+.menuBTN.open .burgerMenu::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menuBTN.open .burgerMenu::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* signin decoration */
+#signIN {
+  margin-left: 50px;
+  font-family: var(--font_Montserrat);
+  font-weight: 600;
+}
+
+#signUP {
+  background-color: var(--orange);
+  color: var(--ng);
+  font-family: var(--font_Montserrat);
+  font-weight: 600;
+}
+
+#signUP:hover {
+  background-color: var(--fg);
+}
+
+@media screen and (max-width: 1200px) {
+  .navContainer {
+    margin: 0;
+    width: 100%;
+  }
+
+  .navContainer ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+  .navContainer ul a {
+    justify-content: center;
+  }
+
+  .navContainer ul.show {
+    display: flex;
+    background-color: var(--ng);
+  }
+  .menuBTN {
+    display: flex;
+  }
+
+  #signIN {
+    margin-left: 0;
+  }
+
+  #navUL li {
+    width: 100%;
+  }
+}

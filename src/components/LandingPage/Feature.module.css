@@ -1,0 +1,39 @@
+.contentRowOne {
+  /* you can add Colum 2 or more here after duplicating column one in html*/
+  width: 100%;
+  height: 80vh;
+  color: var(--fg);
+}
+.contentRowOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.flexboxContentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+}
+
+.itemBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 30%;
+  height: 300px;
+}
+.itemBox img {
+  margin: 30px 0px 10px 0px;
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+.itemBox > p {
+  max-width: 70%;
+}

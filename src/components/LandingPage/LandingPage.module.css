@@ -1,0 +1,82 @@
+main {
+  background-color: var(--bg) !important;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+}
+
+/* content decoration goes here */
+
+/* footer decoration */
+
+footer {
+  background-color: var(--ng);
+  color: #dddddd;
+  width: 100%;
+}
+
+.footerRow {
+  display: flex;
+  flex-flow: row;
+  margin: auto;
+  width: 80%;
+  height: 40vh;
+}
+
+.footerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+/* media query for smaller screen */
+
+@media screen and (max-width: 1200px) {
+  .navContainer {
+    margin: 0;
+    width: 100%;
+  }
+
+  .navContainer ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+  .navContainer ul a {
+    justify-content: center;
+  }
+
+  .navContainer ul.show {
+    display: flex;
+    background-color: var(--bg);
+  }
+  .menuBTN {
+    display: flex;
+  }
+
+  #signIN {
+    margin-left: 0;
+  }
+
+  #navUL li {
+    width: 100%;
+  }
+
+  .contentRowOne {
+    height: auto;
+  }
+  .itemBox {
+    width: 100%;
+  }
+
+  .footerRow {
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+    height: auto;
+  }
+}

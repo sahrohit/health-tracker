@@ -1,0 +1,32 @@
+.button {
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  background-color: #ff416c;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 41px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.social {
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem 6px;
+}
+
+.social:hover {
+  transform: scale(1.1);
+  transition-timing-function: cubic-bezier();
+}
+
+.formbackground {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+}
