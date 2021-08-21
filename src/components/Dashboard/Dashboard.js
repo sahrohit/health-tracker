@@ -4,7 +4,7 @@ import styles from "./Dashboard.module.css";
 
 import Navbar from "../LandingPage/Navbar";
 import Profile from "./Profile";
-import Databox from "../LandingPage/Databox";
+import Databox from "./Databox";
 
 const Dashboard = () => {
   useEffect(() => {
