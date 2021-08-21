@@ -1,0 +1,14 @@
+body {
+  background-color: var(--bg) !important;
+}
+
+.container {
+  margin-top: 86.4px;
+  height: 100%;
+  background-color: red;
+  width: 100%;
+}
+
+.title {
+  color: aquamarine;
+}

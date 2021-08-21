@@ -15,11 +15,12 @@ const Auth = () => {
     history.push("/dashboard");
   }
   return (
-    <div className={`w-100 ${styles.container}`} style={{ maxWidth: "800px" }}>
-      <div
-        class={`container ${showSignUp && "right-panel-active"}`}
-        id="container"
-      >
+    <div
+      id="container"
+      className={`w-100 ${styles.container}`}
+      style={{ maxWidth: "800px" }}
+    >
+      <div class={`container ${showSignUp && "right-panel-active"}`}>
         <SignUp />
         <Login />
 

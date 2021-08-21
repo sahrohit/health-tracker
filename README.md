@@ -1,3 +1,5 @@
-# React Firebase Authentication Template
+# Stay Healthy
 
-This is a complete templete for using firebase authentication with React.
+Stay Healthy is a very good app.
+
+Deployment : https://stayhealthyforever.vercel.app/

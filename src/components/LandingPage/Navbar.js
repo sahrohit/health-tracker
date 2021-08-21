@@ -31,7 +31,7 @@ const Navbar = () => {
             <a href="http://www.google.com">About</a>
           </li>
           <li>
-            <a href="http://www.google.com">Services</a>
+            <a href="/exercise">Exercise</a>
           </li>
           <li>
             <a href="http://www.google.com">Contact</a>

@@ -13,14 +13,14 @@ import Exercise from "./Exercise/Exercise";
 import wallpaper from "../assets/wallpapers.json";
 
 function App() {
-  useEffect(() => {
-    document.body.style.backgroundImage =
-      "url(" +
-      wallpaper.wallpaper[
-        Math.floor(Math.random() * wallpaper.wallpaper.length)
-      ] +
-      ")";
-  }, []);
+  // useEffect(() => {
+  //   document.body.style.backgroundImage =
+  //     "url(" +
+  //     wallpaper.wallpaper[
+  //       Math.floor(Math.random() * wallpaper.wallpaper.length)
+  //     ] +
+  //     ")";
+  // });
 
   return (
     <Router>
@@ -36,6 +36,7 @@ function App() {
             component={UpdateProfile}
           ></PrivateRoute>
           <Container
+            id="background"
             className={`d-flex align-items-center justify-content-center`}
             style={{ minHeight: "100vh" }}
           >

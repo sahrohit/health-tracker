@@ -7,7 +7,9 @@ const Exercise = () => {
   return (
     <>
       <Navbar />
-      {/* Todo : Add the main Exercise Model Window Here */}
+      <div className={styles.container}>
+        <h1 className={styles.title}> This is where the main ML Model goes.</h1>
+      </div>
     </>
   );
 };
