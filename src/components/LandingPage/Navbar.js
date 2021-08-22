@@ -42,7 +42,21 @@ const Navbar = () => {
           </li>
           <li>
             <a href="/auth" id={styles.signIN}>
-              {currentUser ? `${currentUser.displayName}` : "Sign in"}
+              <div>
+                {currentUser && (
+                  <img
+                    className={styles.avatar}
+                    width="30"
+                    src={
+                      currentUser.photoURL || "https://picsum.photos/200/300"
+                    }
+                    alt="avatar"
+                  />
+                )}
+              </div>
+              <div className={currentUser && `${styles.name}`}>
+                {currentUser ? `  ${currentUser.displayName}` : "Sign in"}
+              </div>
             </a>
           </li>
           <li className={styles.signUP}>
