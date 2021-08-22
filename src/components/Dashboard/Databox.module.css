@@ -6,14 +6,13 @@
   margin: 1rem;
   padding-top: 0.8rem;
   border-radius: 20px;
-  /* height: 4980px; */
 }
 
 .chart {
   padding: 4rem;
 }
 
-h2 {
+.title {
   color: white;
   margin-top: 2rem !important;
 }

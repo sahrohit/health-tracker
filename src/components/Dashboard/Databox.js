@@ -35,7 +35,9 @@ const Databox = () => {
         <Line data={data} options={options} />
       </div>
       <section id="exerciselogs">
-        <h2 href="#exerciselogs">Exercise Logs</h2>
+        <h2 className={styles.title} href="#exerciselogs">
+          Exercise Logs
+        </h2>
         <div>
           <DataCard />
           <DataCard />
