@@ -4,6 +4,16 @@
   flex-direction: column;
   align-content: space-between;
   margin: 1rem;
+  padding-top: 0.8rem;
   border-radius: 20px;
-  height: 4980px;
+  /* height: 4980px; */
+}
+
+.chart {
+  padding: 4rem;
+}
+
+h2 {
+  color: white;
+  margin-top: 2rem !important;
 }

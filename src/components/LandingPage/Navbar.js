@@ -38,7 +38,7 @@ const Navbar = () => {
             <a href="/exercise">Exercise</a>
           </li>
           <li>
-            <a href="http://www.google.com">Contact</a>
+            <a href="/dashboard#exerciselogs">Exercise Logs</a>
           </li>
           <li>
             <a href="/auth" id={styles.signIN}>

@@ -1,0 +1,35 @@
+.container {
+  border: 1px solid white;
+  height: 110px;
+  margin: 2rem;
+  border-radius: 15px;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
+.title {
+  text-align: left;
+  margin: 1rem;
+  color: white;
+}
+
+.title > h2 {
+  text-align: left;
+}
+
+.details {
+  text-align: right;
+  margin: 1rem;
+  color: white;
+  width: 50%;
+}
+
+.details > h2 {
+  text-align: right;
+  font-size: 1.2rem !important;
+}
+
+.details > p {
+  font-size: 1.2rem !important;
+}

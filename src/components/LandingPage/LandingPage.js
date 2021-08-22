@@ -10,7 +10,7 @@ import Footer from "./Footer";
 
 const LandingPage = () => {
   useEffect(() => {
-    const tween = KUTE.fromTo(
+    KUTE.fromTo(
       "#blob1",
       { path: "#blob1" },
       { path: "#blob2" },
