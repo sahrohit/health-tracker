@@ -1,11 +1,14 @@
 .container {
-  border: 1px solid white;
+  border: 1px solid #373860;
   height: 110px;
   margin: 2rem;
   border-radius: 15px;
   display: flex;
   align-content: space-between;
   justify-content: space-around;
+  background-color: #373860;
+
+  box-shadow: 0 3px 10px rgb(255 255 255 / 0.1);
 }
 
 .title {
